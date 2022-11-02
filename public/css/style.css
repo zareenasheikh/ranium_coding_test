@@ -1,0 +1,195 @@
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ }
+ 
+ /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+p {
+  color: #b3b3b3;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+  padding: 7rem 0; }
+
+h2 {
+  font-size: 20px; }
+
+.form-control:active, .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#calendar {
+  margin: 0 auto; }
+  #calendar .fc-view-container {
+    background-color: #fff;
+    /* -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2); */
+    /* box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);  */
+    margin-right: 30px;
+  }
+  #calendar .fc-toolbar.fc-header-toolbar .fc-center {
+    display: block; }
+
+#calendar-container {
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 20px; }
+
+.fc-header-toolbar {
+  /*
+    the calendar will be butting up against the edges,
+    but let's scoot in the header's buttons
+    */
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+@media (max-width: 767.98px) {
+  .fc-toolbar {
+    display: block !important;
+    text-align: center; }
+    .fc-toolbar .fc-center {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 20px; } }
+
+
+      .fc-event, .fc-event-dot, .fc-button-primary {
+        background-color: #57c574 !important;
+        border: 1px solid #57c574 !important;
+
+    }
+
+
+  .fc-right {
+    display: none;
+    
+}
+
+
+.fc-toolbar h2 {
+  font-size: 1em;
+  margin: auto;
+}
+
+
+
+/* bar circle */
+
+
+.circle-wrap {
+  margin: 50px auto;
+  width: 150px;
+  height: 150px;
+  background: #e6e2e7;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .circle .mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #57c574;
+}
+
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(126deg);
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(126deg);
+  }
+}
+
+.circle-wrap .inside-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+
+  .top-line {
+            color: #57c574 !important;
+            margin: 1rem 0;
+            background-color: #57c574 !important;
+            border: 1px solid !important;
+            padding: 1px !important;
+            opacity: calc(110) !important;
+        }
+
+        .title {
+            color: #57c574 !important;
+            font-size: larger;
+            font-weight: 500;
+            text-transform: uppercase;
+
+        }
+
+        .setting,
+        .arrowdown {
+            color: gray;
+        }
+
+        .profile-img {
+            width: 25px;
+        }
+
+        .view-h {
+            font-size: 14px;
+            font-weight: 500;
+            color: grey;
+        }
+
+        &#x20B9 {
+            font-size: 34px;
+            font-weight: 500;
+        }
+
